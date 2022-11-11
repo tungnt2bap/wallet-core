@@ -5,13 +5,13 @@ ENV DEBIAN_FRONTEND=noninteractive
 # Install some basics
 RUN apt-get update \
     && apt-get install -y \
-        wget \
-        curl \
-        git \
-        vim \
-        unzip \
-        xz-utils \
-        software-properties-common \
+    wget \
+    curl \
+    git \
+    vim \
+    unzip \
+    xz-utils \
+    software-properties-common \
     && apt-get clean && rm -rf /var/lib/apt/lists/*
 
 # Add latest cmake/boost
@@ -24,16 +24,16 @@ RUN wget http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.0g-2
 # Install required packages for dev
 RUN apt-get update \
     && apt-get install -y \
-        build-essential \
-        libtool autoconf pkg-config \
-        ninja-build \
-        ruby-full \
-        clang-14 \
-        llvm-14 \
-        libc++-dev libc++abi-dev \
-        cmake \
-        libboost-all-dev \
-        ccache \
+    build-essential \
+    libtool autoconf pkg-config \
+    ninja-build \
+    ruby-full \
+    clang-14 \
+    llvm-14 \
+    libc++-dev libc++abi-dev \
+    cmake \
+    libboost-all-dev \
+    ccache \
     && apt-get clean && rm -rf /var/lib/apt/lists/*
 
 ENV CC=/usr/bin/clang-14

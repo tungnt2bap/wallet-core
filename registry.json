@@ -2848,5 +2848,33 @@
       "source": "https://github.com/hashgraph",
       "documentation": "https://docs.hedera.com"
     }
+  },
+  {
+    "id": "spectre",
+    "name": "Spectre Chain",
+    "coinId": 10000039,
+    "chainId": "39",
+    "symbol": "SPC",
+    "decimals": 18,
+    "blockchain": "Ethereum",
+    "derivation": [
+      {
+        "path": "m/44'/60'/0'/0/0"
+      }
+    ],
+    "curve": "secp256k1",
+    "publicKeyType": "secp256k1Extended",
+    "explorer": {
+      "url": "https://spectre-scan.io/",
+      "txPath": "/tx/",
+      "accountPath": "/address/",
+      "sampleTx": "0x0b0131b5d8b336353d4092af2249e3ff298eddfbac872d032d71333536f6fc12",
+      "sampleAccount": "0xDA0786dF404b2E1Da57D0eE495F87462b90eA7e1"
+    },
+    "info": {
+      "url": "https://spectre-bc.io/",
+      "rpc": "https://spectre-rpc.io",
+      "documentation": "https://head2head.gitbook.io/spectre-chain/"
+    }
   }
 ]
